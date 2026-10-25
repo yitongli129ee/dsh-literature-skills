@@ -1,0 +1,7 @@
+# dsh-literature-skills bundle patch.
+# 一行 insert 挂载 Host 半身（index.js），它在 apply 时把 skills/ 里的三个
+# 技能目录落到 ~/.dsh/skills/ 下。安装/卸载插件即增删技能，无需手改目录。
+- insert:
+    - id: dsh-literature-skills
+      name: 'dsh-literature-skills'
+      config: {}

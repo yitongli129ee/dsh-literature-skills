@@ -1,0 +1,46 @@
+{
+  "name": "dsh-literature-skills",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "三个文献调研技能打包成一个 DSH 插件：academic-web-research / academic-literature-research / off-campus-literature。装一个，得三个 skill。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "literature",
+    "scholar",
+    "cnki",
+    "ieee",
+    "wiley"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  }
+}
